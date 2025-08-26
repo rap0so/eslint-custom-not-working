@@ -10,7 +10,7 @@ const plugin = {
       create: function (context) {
         return {
           ImportDeclaration(node) {
-            if (node.source.value.contains("file/bad-import")) {
+            if (node.source.value.includes("file/bad-import")) {
               context.report({
                 node,
                 message: "Do not use bad imports",
