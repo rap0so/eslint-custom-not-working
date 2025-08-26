@@ -4,8 +4,6 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "./file/bad-import.js";
 
-// TODO FIX bro
-
 function App() {
   const [count, setCount] = useState(0);
 
